@@ -27,9 +27,9 @@ public class GraceStartCommand extends CustomCommand {
 
 
         Bukkit.getOnlinePlayers().forEach(player -> {
-            player.sendMessage("sa porra de grace comecou menor");
-            player.sendMessage("sa porra de grace comecou menor");
-            player.sendMessage("sa porra de grace comecou menor");
+            player.sendMessage("");
+            player.sendMessage("§e O grace começou!");
+            player.sendMessage("");
         });
     }
 }

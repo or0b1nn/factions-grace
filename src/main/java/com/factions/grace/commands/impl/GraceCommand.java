@@ -24,11 +24,11 @@ public class GraceCommand extends CustomCommand {
 
         if (isGraceActive) {
             commandSender.sendMessage("");
-            commandSender.sendMessage("§eFalta tanto tempo mano brow, "  + TimeFormatter.format(time - System.currentTimeMillis()));
+            commandSender.sendMessage("§eFaltam "  + TimeFormatter.format(time - System.currentTimeMillis()) + " para acabar o grace.");
             commandSender.sendMessage("");
             return;
         }
 
-        commandSender.sendMessage("§cO grace nao está ativo...");
+        commandSender.sendMessage("§cO grace não está ativo...");
     }
 }

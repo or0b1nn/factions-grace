@@ -7,14 +7,14 @@ import java.util.concurrent.TimeUnit;
 public class TimeFormatter {
     public static String format(long value) {
         if (value <= 0L) {
-            return "0 segundos";
+            return "0 s";
         } else {
             long days = TimeUnit.MILLISECONDS.toDays(value);
             long hours = TimeUnit.MILLISECONDS.toHours(value) - days * 24L;
             long minutes = TimeUnit.MILLISECONDS.toMinutes(value) - TimeUnit.MILLISECONDS.toHours(value) * 60L;
             long second = TimeUnit.MILLISECONDS.toSeconds(value) - TimeUnit.MILLISECONDS.toMinutes(value) * 60L;
             long[] times = new long[]{days, hours, minutes, second};
-            String[] names = new String[]{" dias", " horas", " minutos e ", " segundos"};
+            String[] names = new String[]{" d,", " h,", " m e", " s"};
             List<String> values = Lists.newArrayList();
 
             for(int index = 0; index < times.length; ++index) {

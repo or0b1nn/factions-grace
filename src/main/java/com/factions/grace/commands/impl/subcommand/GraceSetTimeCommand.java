@@ -31,7 +31,9 @@ public class GraceSetTimeCommand extends CustomCommand {
         if (isGraceActive) {
             long highTime = System.currentTimeMillis() + TimeUnit.HOURS.toMillis(time);
             Bukkit.getOnlinePlayers().forEach(player -> {
-                player.sendMessage("§ao tempo do grace foi alterado para " + TimeFormatter.format(highTime - System.currentTimeMillis()));
+                player.sendMessage("");
+                player.sendMessage("§eO tempo do grace foi alterado para " + TimeFormatter.format(highTime - System.currentTimeMillis()));
+                player.sendMessage("");
             });
         }
 
