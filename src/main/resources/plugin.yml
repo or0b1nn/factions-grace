@@ -1,0 +1,4 @@
+name: factions-grace
+version: 1.0
+main: com.factions.grace.GracePlugin
+author: r0b1nn
